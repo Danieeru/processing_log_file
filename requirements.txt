@@ -1,0 +1,5 @@
+coverage
+argparse
+pytest
+pytest-cov
+tabulate

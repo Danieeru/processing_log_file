@@ -30,8 +30,6 @@ def check_correct_file(file: str) -> bool:
     if (not os.path.exists(file) or not os.path.isfile(file) or
             os.path.getsize(file) == 0):
         return False
-    if not os.access(file, os.R_OK):
-        return False
     if not file.endswith('.log'):
         return False
     return True
